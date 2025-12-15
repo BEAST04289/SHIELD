@@ -1946,7 +1946,7 @@ with stat_col4:
 st.markdown("---")
 st.markdown("<br>", unsafe_allow_html=True)
 
-# --- SOCIAL PROOF / TESTIMONIALS CAROUSEL ---
+# ---- SOCIAL PROOF / TESTIMONIALS CAROUSEL ----
 st.markdown(f"### {t['testimonials_title']}")
 
 # Testimonial Data
