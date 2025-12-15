@@ -53,7 +53,7 @@ def get_ocr_text(image_stream):
         print(f"OCR Error: {e}")
         return None
 
-def analyze_with_gpt(ocr_text):
+def analyze_with_gpt(ocr_text, language="en"):
     """
     Analyzes the text using Azure OpenAI or GitHub Models to detect scams.
     """
@@ -79,7 +79,11 @@ def analyze_with_gpt(ocr_text):
     else:
         return None
 
-    system_prompt = """
+    lang_instruction = ""
+    if language == "hi":
+        lang_instruction = "IMPORTANT: Provide the 'summary', 'red_flags', and 'advice' fields in HINDI (Devanagari script). Keep 'verdict_label' in English."
+
+    system_prompt = f"""
     You are SHIELD, an expert scam detection AI. Your job is to analyze text from images (screenshots, letters, messages) and determine if it is a scam.
     
     Analyze the text for:
@@ -89,14 +93,16 @@ def analyze_with_gpt(ocr_text):
     4. Too good to be true offers
     5. Threats of account suspension or legal action
 
+    {lang_instruction}
+
     Return a JSON object with this EXACT structure:
-    {
+    {{
         "verdict_label": "SAFE" or "CAUTION" or "HIGH RISK",
         "confidence_score": 0-100 (integer),
         "summary": "A short, clear explanation of why.",
         "red_flags": ["Flag 1", "Flag 2", "Flag 3"],
         "advice": ["Step 1", "Step 2", "Step 3"]
-    }
+    }}
     """
 
     user_prompt = f"Analyze this text found in an image:\n\n{ocr_text}"
@@ -116,7 +122,7 @@ def analyze_with_gpt(ocr_text):
         print(f"GPT Error: {e}")
         return None
 
-def analyze_image(file):
+def analyze_image(file, language="en"):
     """
     Main entry point for Visual Shield.
     """
@@ -130,24 +136,41 @@ def analyze_image(file):
     if not ocr_text:
         # If we have no keys, we simulate a result for the "Dugtrio logo.jpg" or generic
         # This ensures the UI can be built even without keys working yet.
-        return {
-            "verdict_label": "HIGH RISK",
-            "confidence_score": 88,
-            "summary": "This appears to be a simulated scam alert (Demo Mode). The system detected urgency and suspicious patterns.",
-            "red_flags": [
-                "Urgent action required",
-                "Suspicious link detected",
-                "Unverified sender"
-            ],
-            "advice": [
-                "Do not click any links",
-                "Contact the official company directly",
-                "Delete this message"
-            ]
-        }
+        if language == "hi":
+             return {
+                "verdict_label": "HIGH RISK",
+                "confidence_score": 88,
+                "summary": "यह एक नकली वायरस चेतावनी (डेमो मोड) प्रतीत होती है। सिस्टम ने तात्कालिकता और संदिग्ध पैटर्न का पता लगाया है।",
+                "red_flags": [
+                    "तत्काल कार्रवाई की आवश्यकता",
+                    "संदिग्ध लिंक का पता चला",
+                    "असत्यापित प्रेषक"
+                ],
+                "advice": [
+                    "किसी भी लिंक पर क्लिक न करें",
+                    "सीधे आधिकारिक कंपनी से संपर्क करें",
+                    "इस संदेश को हटा दें"
+                ]
+            }
+        else:
+            return {
+                "verdict_label": "HIGH RISK",
+                "confidence_score": 88,
+                "summary": "This appears to be a simulated scam alert (Demo Mode). The system detected urgency and suspicious patterns.",
+                "red_flags": [
+                    "Urgent action required",
+                    "Suspicious link detected",
+                    "Unverified sender"
+                ],
+                "advice": [
+                    "Do not click any links",
+                    "Contact the official company directly",
+                    "Delete this message"
+                ]
+            }
 
     # 4. Analyze with GPT
-    analysis = analyze_with_gpt(ocr_text)
+    analysis = analyze_with_gpt(ocr_text, language)
     
     if analysis:
         return analysis
