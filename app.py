@@ -41,7 +41,8 @@ TRANSLATIONS = {
         "proceed_caution": "ℹ️ Proceed with normal caution.",
         "could_not_analyze": "❌ Could not analyze.",
         "please_upload": "⚠️ Please upload a file.",
-        "please_enter": "⚠️ Please enter some text."
+        "please_enter": "⚠️ Please enter some text.",
+        "built_for": "Built For Everyone with Love ❤️"
     },
     "hi": {
         "hero_title": "क्या यह एक धोखा है?",
@@ -75,8 +76,77 @@ TRANSLATIONS = {
         "proceed_caution": "ℹ️ सामान्य सावधानी के साथ आगे बढ़ें।",
         "could_not_analyze": "❌ विश्लेषण नहीं कर सका।",
         "please_upload": "⚠️ कृपया एक फ़ाइल अपलोड करें।",
-        "please_enter": "⚠️ कृपया कुछ टेक्स्ट दर्ज करें।"
+        "please_enter": "⚠️ कृपया कुछ टेक्स्ट दर्ज करें।",
+        "built_for": "सभी के लिए प्यार से बनाया गया ❤️"
     }
+}
+
+# --- TESTIMONIALS DATA ---
+TESTIMONIALS_DATA = {
+    "en": [
+        {
+            "text": "I almost lost my retirement savings to a voice clone scam that sounded exactly like my son. SHIELD flagged it as 'High Risk' in seconds. It saved me everything.",
+            "name": "Robert, 60",
+            "role": "Retired Accountant • London, UK",
+            "avatar": "R"
+        },
+        {
+            "text": "As a teacher, I see parents getting tricked by fake school payment links all the time. I use SHIELD to verify every link before I click. It's peace of mind I can't put a price on.",
+            "name": "Sarah, 46",
+            "role": "High School Teacher • Ohio, USA",
+            "avatar": "S"
+        },
+        {
+            "text": "I received a text about a package delivery. My grandson installed SHIELD and it told me it was a fake link immediately. I would have clicked it!",
+            "name": "Martha, 72",
+            "role": "Grandmother • Florida, USA",
+            "avatar": "M"
+        },
+        {
+            "text": "The image scanner helped me identify a fake investment ad on Facebook. It looked so real, but SHIELD spotted the deepfake signs.",
+            "name": "David, 65",
+            "role": "Small Business Owner • Sydney, AU",
+            "avatar": "D"
+        },
+        {
+            "text": "Simple to use. I don't need to be a computer expert to feel safe. It just works.",
+            "name": "Elena, 58",
+            "role": "Nurse • Toronto, CA",
+            "avatar": "E"
+        }
+    ],
+    "hi": [
+        {
+            "text": "मैंने अपनी सेवानिवृत्ति की बचत लगभग खो दी थी, एक वॉयस क्लोन घोटाले में जो बिल्कुल मेरे बेटे जैसा लग रहा था। SHIELD ने इसे सेकंडों में 'उच्च जोखिम' के रूप में चिह्नित किया। इसने मेरा सब कुछ बचा लिया।",
+            "name": "रॉबर्ट, 60",
+            "role": "सेवानिवृत्त लेखाकार • लंदन, यूके",
+            "avatar": "R"
+        },
+        {
+            "text": "एक शिक्षक के रूप में, मैं माता-पिता को हर समय नकली स्कूल भुगतान लिंक से ठगे जाते हुए देखती हूँ। मैं क्लिक करने से पहले हर लिंक को सत्यापित करने के लिए SHIELD का उपयोग करती हूँ। यह मन की शांति है जिसकी मैं कीमत नहीं लगा सकती।",
+            "name": "सारा, 46",
+            "role": "हाई स्कूल शिक्षक • ओहियो, यूएसए",
+            "avatar": "S"
+        },
+        {
+            "text": "मुझे पैकेज डिलीवरी के बारे में एक टेक्स्ट मिला। मेरे पोते ने SHIELD स्थापित किया और इसने मुझे तुरंत बताया कि यह एक नकली लिंक था। मैं इसे क्लिक कर देती!",
+            "name": "मार्था, 72",
+            "role": "दादी • फ्लोरिडा, यूएसए",
+            "avatar": "M"
+        },
+        {
+            "text": "इमेज स्कैनर ने मुझे फेसबुक पर एक नकली निवेश विज्ञापन की पहचान करने में मदद की। यह इतना असली लग रहा था, लेकिन SHIELD ने डीपफेक संकेतों को देखा।",
+            "name": "डेविड, 65",
+            "role": "लघु व्यवसाय स्वामी • सिडनी, एयू",
+            "avatar": "D"
+        },
+        {
+            "text": "उपयोग करने में आसान। सुरक्षित महसूस करने के लिए मुझे कंप्यूटर विशेषज्ञ होने की आवश्यकता नहीं है। यह बस काम करता है।",
+            "name": "एलेना, 58",
+            "role": "नर्स • टोरंटो, सीए",
+            "avatar": "E"
+        }
+    ]
 }
 
 # Initialize Language State
@@ -106,15 +176,15 @@ if st.session_state.get('theme', 'Dark Mode') == 'Dark Mode':
     btn_hover = "#E2E8F0"
     testimonial_bg = "#1E293B"
 else:
-    bg_color = "#F8FAFC" # Slate 50
-    text_color = "#0F172A" # Slate 900
+    bg_color = "#F5F5F5" # Soft White Smoke
+    text_color = "#1E293B" # Slate 800
     card_bg = "#FFFFFF"
-    border_color = "rgba(0, 0, 0, 0.1)"
+    border_color = "rgba(0, 0, 0, 0.08)"
     sub_text_color = "#475569"
-    hero_gradient = "linear-gradient(180deg, #0F172A 0%, #475569 100%)"
-    tab_bg = "rgba(255, 255, 255, 0.8)"
+    hero_gradient = "linear-gradient(180deg, #1E293B 0%, #475569 100%)"
+    tab_bg = "rgba(255, 255, 255, 0.9)"
     tab_hover = "rgba(0, 0, 0, 0.05)"
-    btn_bg = "#0F172A"
+    btn_bg = "#1E293B"
     btn_text = "#F8FAFC"
     btn_hover = "#334155"
     testimonial_bg = "#FFFFFF"
@@ -625,8 +695,8 @@ def render_results(result, result_type="generic", language="en"):
                 <div class='meter-fill' style='width: 100%; background: linear-gradient(90deg, #F87171 0%, #FBBF24 50%, #4ADE80 100%);'></div>
                 <div class='meter-needle' style='left: {score}%; border-color: {theme_color};'></div>
             </div>
-            <div style='text-align: center; font-weight: 600; color: #94A3B8;'>
-                {t['ai_confidence']}: <span style='color: #F8FAFC;'>{score}%</span>
+            <div style='text-align: center; font-weight: 600; color: {sub_text_color};'>
+                {t['ai_confidence']}: <span style='color: {text_color};'>{score}%</span>
             </div>
         </div>
         """,
@@ -703,7 +773,7 @@ def render_results(result, result_type="generic", language="en"):
             <div style='text-align: center; padding: 2rem; background: rgba(74, 222, 128, 0.1); border-radius: 16px; border: 1px solid #4ADE80; margin-top: 2rem;'>
                 <div style='font-size: 3em;'>🎉</div>
                 <h2 style='color: #4ADE80; margin: 0.5rem 0;'>{t['great_job']}</h2>
-                <p style='color: #F8FAFC;'>{t['great_job_desc']}</p>
+                <p style='color: {text_color};'>{t['great_job_desc']}</p>
             </div>
             """,
             unsafe_allow_html=True
@@ -714,28 +784,34 @@ def render_results(result, result_type="generic", language="en"):
 if 'theme' not in st.session_state:
     st.session_state.theme = 'Dark Mode'
 
-col_spacer, col_lang, col_theme = st.columns([6, 2, 2])
-
-with col_lang:
-    lang_choice = st.selectbox(
-        "Language / भाषा", 
-        ["English", "हिंदी"], 
-        index=0 if st.session_state.language == 'en' else 1,
-        key="lang_select"
-    )
-    if lang_choice == "English":
+def update_language():
+    if st.session_state.lang_select == "English":
         st.session_state.language = 'en'
     else:
         st.session_state.language = 'hi'
 
+def update_theme():
+    st.session_state.theme = st.session_state.theme_select
+
+col_spacer, col_lang, col_theme = st.columns([6, 2, 2])
+
+with col_lang:
+    st.selectbox(
+        "Language / भाषा", 
+        ["English", "हिंदी"], 
+        index=0 if st.session_state.language == 'en' else 1,
+        key="lang_select",
+        on_change=update_language
+    )
+
 with col_theme:
-    theme_choice = st.selectbox(
+    st.selectbox(
         "Theme", 
         ["Dark Mode", "Light Mode"], 
         index=0 if st.session_state.theme == 'Dark Mode' else 1,
-        key="theme_select"
+        key="theme_select",
+        on_change=update_theme
     )
-    st.session_state.theme = theme_choice
 
 # --- HERO SECTION ---
 t = TRANSLATIONS[st.session_state.language]
@@ -870,38 +946,7 @@ st.markdown("<br>", unsafe_allow_html=True)
 st.markdown(f"### {t['testimonials_title']}")
 
 # Testimonial Data
-testimonials = [
-    {
-        "text": "I almost lost my retirement savings to a voice clone scam that sounded exactly like my son. SHIELD flagged it as 'High Risk' in seconds. It saved me everything.",
-        "name": "Robert, 60",
-        "role": "Retired Accountant • London, UK",
-        "avatar": "R"
-    },
-    {
-        "text": "As a teacher, I see parents getting tricked by fake school payment links all the time. I use SHIELD to verify every link before I click. It's peace of mind I can't put a price on.",
-        "name": "Sarah, 46",
-        "role": "High School Teacher • Ohio, USA",
-        "avatar": "S"
-    },
-    {
-        "text": "I received a text about a package delivery. My grandson installed SHIELD and it told me it was a fake link immediately. I would have clicked it!",
-        "name": "Martha, 72",
-        "role": "Grandmother • Florida, USA",
-        "avatar": "M"
-    },
-    {
-        "text": "The image scanner helped me identify a fake investment ad on Facebook. It looked so real, but SHIELD spotted the deepfake signs.",
-        "name": "David, 65",
-        "role": "Small Business Owner • Sydney, AU",
-        "avatar": "D"
-    },
-    {
-        "text": "Simple to use. I don't need to be a computer expert to feel safe. It just works.",
-        "name": "Elena, 58",
-        "role": "Nurse • Toronto, CA",
-        "avatar": "E"
-    }
-]
+testimonials = TESTIMONIALS_DATA[st.session_state.language]
 
 # Initialize session state for carousel
 if 'testimonial_index' not in st.session_state:
@@ -970,7 +1015,7 @@ with footer_col2:
 
 with footer_col3:
     st.markdown("### 🏆 Built For")
-    st.caption("Everyone with Love ❤️")
+    st.caption(t['built_for'])
 
 st.markdown(
     f"""
