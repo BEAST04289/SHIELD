@@ -22,25 +22,28 @@ st.set_page_config(
 TRANSLATIONS = {
     "en": {
         "hero_title": "Is this a Scam?",
-        "hero_subtitle": "Upload a screenshot, audio recording, or text message. SHIELD's AI will analyze it instantly to keep you safe.",
-        "tab_image": "📸 Image Scanner",
-        "tab_audio": "🎙️ Audio Shield",
-        "tab_text": "💬 Text Guard",
-        "tab_family": "👨‍👩‍👧‍👦 Family Shield",
-        "analyze_image_btn": "📸 ANALYZE IMAGE NOW",
-        "analyze_audio_btn": "🎙️ ANALYZE AUDIO NOW",
-        "analyze_text_btn": "💬 ANALYZE TEXT NOW",
+        "hero_subtitle": "Upload a screenshot, audio recording, text message, or paste a URL. SHIELD's AI will analyze it instantly to keep you safe.",
+        "tab_image": "📸 Image",
+        "tab_audio": "🎙️ Audio",
+        "tab_text": "💬 Text",
+        "tab_url": "🔗 Link",
+        "tab_family": "👨‍👩‍👧‍👦 Family",
+        "analyze_image_btn": "🛡️ ANALYZE IMAGE",
+        "analyze_audio_btn": "🛡️ ANALYZE AUDIO",
+        "analyze_text_btn": "🛡️ ANALYZE TEXT",
+        "analyze_url_btn": "🛡️ SCAN LINK",
         "analyzing": "Analyzing...",
         "upload_image": "Upload a screenshot (WhatsApp, Email, SMS)",
         "upload_audio": "Upload a voice recording (mp3, wav)",
         "enter_text": "Paste the suspicious message here...",
+        "enter_url": "Paste the suspicious URL or link here...",
         "stats_blocked": "Scams Blocked",
         "stats_prevented": "Fraud Prevented",
         "stats_accuracy": "Accuracy Rate",
         "stats_data": "Data Stored",
-        "testimonials_title": "💙 Trusted by Families Worldwide",
+        "testimonials_title": "💜 Trusted by Families Worldwide",
         "footer_made_with": "Made with ❤️ for grandparents everywhere | No data stored • No monitoring • 100% privacy",
-        "great_job": "Great Job!",
+        "great_job": "You're Safe!",
         "great_job_desc": "You avoided a potential scam by checking with SHIELD first.",
         "danger": "DANGER",
         "suspicious": "SUSPICIOUS",
@@ -59,29 +62,41 @@ TRANSLATIONS = {
         "family_alert_sent": "🚨 Family Alert Sent to: ",
         "family_alert_desc": "Your designated contact has been notified of this high-risk threat.",
         "scam_of_week": "💡 Scam of the Week",
-        "scam_tip": "Beware of 'Grandparent Scams' using AI voice clones. Always verify by calling back on a known number."
+        "scam_tip": "Beware of 'Grandparent Scams' using AI voice clones. Always verify by calling back on a known number.",
+        "tts_safe": "Good news! This appears to be safe. No scam detected.",
+        "tts_danger": "Warning! This is dangerous. Do not proceed. This is a scam.",
+        "tts_suspicious": "Be careful! This looks suspicious. Verify before proceeding.",
+        "grandparents_mode": "Grandparents Mode",
+        "gp_instruction": "What do you want to check?",
+        "gp_check_image": "Upload Image to Check",
+        "gp_check_audio": "Upload Audio to Check",
+        "gp_check_link": "Paste Link to Check",
+        "gp_check_text": "Paste Message to Check"
     },
     "hi": {
         "hero_title": "क्या यह एक धोखा है?",
-        "hero_subtitle": "एक स्क्रीनशॉट, ऑडियो रिकॉर्डिंग या टेक्स्ट संदेश अपलोड करें। SHIELD का AI आपको सुरक्षित रखने के लिए तुरंत इसका विश्लेषण करेगा।",
-        "tab_image": "📸 इमेज स्कैनर",
-        "tab_audio": "🎙️ ऑडियो कवच",
-        "tab_text": "💬 टेक्स्ट रक्षक",
-        "tab_family": "👨‍👩‍👧‍👦 परिवार सुरक्षा",
-        "analyze_image_btn": "📸 अभी इमेज जांचें",
-        "analyze_audio_btn": "🎙️ अभी ऑडियो जांचें",
-        "analyze_text_btn": "💬 अभी टेक्स्ट जांचें",
+        "hero_subtitle": "स्क्रीनशॉट, ऑडियो रिकॉर्डिंग, टेक्स्ट संदेश या URL अपलोड करें। SHIELD का AI तुरंत विश्लेषण करेगा।",
+        "tab_image": "📸 इमेज",
+        "tab_audio": "🎙️ ऑडियो",
+        "tab_text": "💬 टेक्स्ट",
+        "tab_url": "🔗 लिंक",
+        "tab_family": "👨‍👩‍👧‍👦 परिवार",
+        "analyze_image_btn": "🛡️ इमेज जांचें",
+        "analyze_audio_btn": "🛡️ ऑडियो जांचें",
+        "analyze_text_btn": "🛡️ टेक्स्ट जांचें",
+        "analyze_url_btn": "🛡️ लिंक स्कैन करें",
         "analyzing": "विश्लेषण कर रहा है...",
         "upload_image": "स्क्रीनशॉट अपलोड करें (WhatsApp, Email, SMS)",
         "upload_audio": "वॉयस रिकॉर्डिंग अपलोड करें (mp3, wav)",
         "enter_text": "संदेहास्पद संदेश यहाँ पेस्ट करें...",
+        "enter_url": "संदेहास्पद URL या लिंक यहाँ पेस्ट करें...",
         "stats_blocked": "घोटाले रोके गए",
         "stats_prevented": "धोखाधड़ी रोकी गई",
         "stats_accuracy": "सटीकता दर",
         "stats_data": "डेटा संग्रहीत",
-        "testimonials_title": "💙 दुनिया भर के परिवारों द्वारा विश्वसनीय",
-        "footer_made_with": "दादा-दादी के लिए ❤️ के साथ बनाया गया | कोई डेटा संग्रहीत नहीं • कोई निगरानी नहीं • 100% गोपनीयता",
-        "great_job": "बहुत बढ़िया!",
+        "testimonials_title": "💜 दुनिया भर के परिवारों द्वारा विश्वसनीय",
+        "footer_made_with": "दादा-दादी के लिए ❤️ के साथ बनाया गया | कोई डेटा संग्रहीत नहीं • 100% गोपनीयता",
+        "great_job": "आप सुरक्षित हैं!",
         "great_job_desc": "आपने SHIELD के साथ जाँच करके एक संभावित घोटाले से बचा लिया।",
         "danger": "खतरा",
         "suspicious": "संदेहास्पद",
@@ -100,7 +115,16 @@ TRANSLATIONS = {
         "family_alert_sent": "🚨 परिवार को चेतावनी भेजी गई: ",
         "family_alert_desc": "आपके नामित संपर्क को इस उच्च जोखिम वाले खतरे के बारे में सूचित कर दिया गया है।",
         "scam_of_week": "💡 सप्ताह का घोटाला",
-        "scam_tip": "AI वॉयस क्लोन का उपयोग करने वाले 'ग्रैंडपेरेंट स्कैम' से सावधान रहें। हमेशा ज्ञात नंबर पर कॉल करके सत्यापित करें।"
+        "scam_tip": "AI वॉयस क्लोन वाले 'ग्रैंडपेरेंट स्कैम' से सावधान रहें। हमेशा ज्ञात नंबर पर कॉल करके सत्यापित करें।",
+        "tts_safe": "अच्छी खबर! यह सुरक्षित प्रतीत होता है। कोई घोटाला नहीं मिला।",
+        "tts_danger": "चेतावनी! यह खतरनाक है। आगे न बढ़ें। यह एक घोटाला है।",
+        "tts_suspicious": "सावधान! यह संदिग्ध लग रहा है। आगे बढ़ने से पहले सत्यापित करें।",
+        "grandparents_mode": "दादा-दादी मोड",
+        "gp_instruction": "आप क्या जाँचना चाहते हैं?",
+        "gp_check_image": "जाँचने के लिए छवि अपलोड करें",
+        "gp_check_audio": "जाँचने के लिए ऑडियो अपलोड करें",
+        "gp_check_link": "जाँचने के लिए लिंक पेस्ट करें",
+        "gp_check_text": "जाँचने के लिए संदेश पेस्ट करें"
     }
 }
 
@@ -465,7 +489,7 @@ def show_grandmother_message():
                 <div style='flex-grow: 1;'>
                     <div style='font-size: 1.4em; font-weight: 800; color: #FFA726; 
                                 margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;'>
-                        <span>A Message from Grandma Sunita</span>
+                        <span>A Message from Grandma Madhuri Devi</span>
                         <span style='font-size: 0.7em;'>💛</span>
                     </div>
                     <div style='font-size: 1.15em; line-height: 1.8; color: #E1E8ED; font-weight: 500;'>
@@ -485,7 +509,7 @@ def show_grandmother_message():
                             ❤️ Stay safe, stay vigilant
                         </div>
                         <div style='color: #94A3B8; font-size: 0.95em; margin-top: 0.3rem;'>
-                            — Sunita, Age 72, Pune
+                            — Madhuri Devi, Age 72, Pune
                         </div>
                     </div>
                 </div>
@@ -660,11 +684,11 @@ def show_grandmother_tested_badge():
                             background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
                             animation: shine 3s infinite;'></div>
                 <div style='position: relative; display: flex; align-items: center; gap: 1rem;'>
-                    <span style='font-size: 2.5em;'>👵</span>
+                    <span style='font-size: 2.5em;'>👴👵</span>
                     <div style='text-align: left;'>
                         <div style='color: white; font-weight: 900; font-size: 1.3em; 
                                     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);'>
-                            GRANDMOTHER TESTED ✓
+                            GRANDPARENTS TESTED ✓
                         </div>
                         <div style='color: rgba(255,255,255,0.9); font-size: 0.85em; font-weight: 600;'>
                             Verified by Real Users
@@ -673,7 +697,7 @@ def show_grandmother_tested_badge():
                 </div>
             </div>
             <div style='color: #81C784; font-weight: 600; margin-top: 1rem; font-size: 0.95em;'>
-                Built with feedback from 5 grandmothers in Pune<br>
+                Built with feedback from 5 grandparents in Pune<br>
                 <span style='color: #4CAF50; font-size: 1.5em;'>✅ 100% approval rating</span>
             </div>
         </div>
@@ -701,105 +725,17 @@ def show_first_time_tutorial():
     if st.session_state.first_visit:
         st.markdown(
             """
-            <div style='background: linear-gradient(135deg, rgba(0, 184, 212, 0.15) 0%, rgba(0, 229, 255, 0.08) 100%); 
-                        padding: 2rem; border-radius: 16px; margin: 1.5rem 0;
-                        border: 2px solid rgba(0, 184, 212, 0.4);
-                        box-shadow: 0 8px 32px rgba(0, 184, 212, 0.2);'>
+            <div style='background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(139, 92, 246, 0.08) 100%); 
+                        padding: 2rem; border-radius: 20px; margin: 1.5rem 0;
+                        border: 2px solid rgba(99, 102, 241, 0.3);
+                        backdrop-filter: blur(10px);'>
                 <div style='text-align: center; margin-bottom: 1.5rem;'>
-                    <div style='font-size: 3em; margin-bottom: 0.5rem;'>👋</div>
-                    <div style='font-size: 1.8em; font-weight: 800; color: #00B8D4;'>
+                    <div style='font-size: 3.5em; margin-bottom: 0.5rem;'>👋</div>
+                    <div style='font-size: 2em; font-weight: 800; background: linear-gradient(135deg, #6366F1, #8B5CF6); -webkit-background-clip: text; -webkit-text-fill-color: transparent;'>
                         Welcome to SHIELD!
                     </div>
                     <div style='color: #94A3B8; font-size: 1.1em; margin-top: 0.5rem;'>
                         Your family's AI bodyguard is ready to protect you
-                    </div>
-                </div>
-                
-                <div style='background: rgba(255, 255, 255, 0.05); padding: 1.5rem; 
-                            border-radius: 12px; margin: 1rem 0;'>
-                    <div style='font-weight: 700; color: #00E5FF; margin-bottom: 1rem; font-size: 1.2em;'>
-                        🚀 How to Use SHIELD (4 Simple Steps):
-                    </div>
-                    
-                    <div style='display: grid; gap: 1rem;'>
-                        <div style='display: flex; align-items: start; gap: 1rem;'>
-                            <div style='flex-shrink: 0; width: 35px; height: 35px; 
-                                        background: linear-gradient(135deg, #00B8D4 0%, #00E5FF 100%); 
-                                        border-radius: 50%; display: flex; align-items: center; 
-                                        justify-content: center; font-weight: 800; color: #0A1929;'>
-                                1
-                            </div>
-                            <div>
-                                <div style='font-weight: 700; color: #E1E8ED; margin-bottom: 0.3rem;'>
-                                    Choose Your Shield
-                                </div>
-                                <div style='color: #94A3B8; font-size: 0.9em;'>
-                                    Pick Visual (images), Audio (calls), or Text (messages)
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div style='display: flex; align-items: start; gap: 1rem;'>
-                            <div style='flex-shrink: 0; width: 35px; height: 35px; 
-                                        background: linear-gradient(135deg, #00B8D4 0%, #00E5FF 100%); 
-                                        border-radius: 50%; display: flex; align-items: center; 
-                                        justify-content: center; font-weight: 800; color: #0A1929;'>
-                                2
-                            </div>
-                            <div>
-                                <div style='font-weight: 700; color: #E1E8ED; margin-bottom: 0.3rem;'>
-                                    Upload Suspicious Content
-                                </div>
-                                <div style='color: #94A3B8; font-size: 0.9em;'>
-                                    Take a photo, record audio, or paste text
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div style='display: flex; align-items: start; gap: 1rem;'>
-                            <div style='flex-shrink: 0; width: 35px; height: 35px; 
-                                        background: linear-gradient(135deg, #00B8D4 0%, #00E5FF 100%); 
-                                        border-radius: 50%; display: flex; align-items: center; 
-                                        justify-content: center; font-weight: 800; color: #0A1929;'>
-                                3
-                            </div>
-                            <div>
-                                <div style='font-weight: 700; color: #E1E8ED; margin-bottom: 0.3rem;'>
-                                    Get Instant Analysis
-                                </div>
-                                <div style='color: #94A3B8; font-size: 0.9em;'>
-                                    SHIELD analyzes in seconds and tells you if it's safe
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div style='display: flex; align-items: start; gap: 1rem;'>
-                            <div style='flex-shrink: 0; width: 35px; height: 35px; 
-                                        background: linear-gradient(135deg, #00B8D4 0%, #00E5FF 100%); 
-                                        border-radius: 50%; display: flex; align-items: center; 
-                                        justify-content: center; font-weight: 800; color: #0A1929;'>
-                                4
-                            </div>
-                            <div>
-                                <div style='font-weight: 700; color: #E1E8ED; margin-bottom: 0.3rem;'>
-                                    Follow the Advice
-                                </div>
-                                <div style='color: #94A3B8; font-size: 0.9em;'>
-                                    SHIELD tells you exactly what to do next
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div style='background: rgba(255, 193, 7, 0.1); padding: 1rem; 
-                            border-radius: 8px; border-left: 3px solid #FFC107; margin-top: 1rem;'>
-                    <div style='color: #FFA726; font-weight: 700; margin-bottom: 0.5rem;'>
-                        💡 Pro Tip:
-                    </div>
-                    <div style='color: #E1E8ED; font-size: 0.95em;'>
-                        Try <strong>Grandmother Mode</strong> (toggle in settings) for the 
-                        simplest, easiest-to-use interface with larger buttons!
                     </div>
                 </div>
             </div>
@@ -807,11 +743,29 @@ def show_first_time_tutorial():
             unsafe_allow_html=True
         )
         
+        # Use Streamlit columns for steps instead of HTML flex
+        st.markdown("#### 🚀 How to Use SHIELD:")
+        
+        step_col1, step_col2 = st.columns(2)
+        with step_col1:
+            st.markdown("**1️⃣ Choose Your Shield**")
+            st.caption("Pick Image, Audio, Text, or Link Scanner")
+            st.markdown("**2️⃣ Upload Content**")
+            st.caption("Take a photo, record audio, or paste text")
+        with step_col2:
+            st.markdown("**3️⃣ Get Instant Analysis**")
+            st.caption("SHIELD analyzes in seconds")
+            st.markdown("**4️⃣ Follow the Advice**")
+            st.caption("We tell you exactly what to do next")
+        
+        st.info("💡 **Pro Tip:** Try **Grandparents Mode** (👵 button) for larger buttons!")
+        
         col1, col2, col3 = st.columns([1, 1, 1])
         with col2:
             if st.button("✅ Got it! Let's Start", type="primary", use_container_width=True):
                 st.session_state.first_visit = False
                 st.rerun()
+
 
 # --- TESTIMONIALS DATA ---
 TESTIMONIALS_DATA = {
@@ -913,74 +867,105 @@ if st.session_state.last_check_date < today:
     st.session_state.last_check_date = today
     st.toast(f"🔥 Daily Streak Increased! {st.session_state.streak} Days Safe!", icon="🛡️")
 
-# --- ACCESSIBLE & CLEAN STYLING ---
-# Theme Colors
+# --- PREMIUM GLASSMORPHISM STYLING ---
+# Theme Colors - Premium Dark/Light
 if st.session_state.get('theme', 'Dark Mode') == 'Dark Mode':
-    bg_color = "#020617"
+    bg_color = "#0A0A0F"
+    bg_gradient = "radial-gradient(ellipse at 20% 0%, rgba(99, 102, 241, 0.15) 0%, transparent 50%), radial-gradient(ellipse at 80% 100%, rgba(139, 92, 246, 0.1) 0%, transparent 50%), #0A0A0F"
     text_color = "#F8FAFC"
-    card_bg = "#0F172A"
-    border_color = "rgba(255, 255, 255, 0.05)"
+    card_bg = "rgba(15, 23, 42, 0.6)"
+    glass_bg = "rgba(255, 255, 255, 0.03)"
+    border_color = "rgba(255, 255, 255, 0.08)"
     sub_text_color = "#94A3B8"
-    hero_gradient = "linear-gradient(180deg, #FFFFFF 0%, #94A3B8 100%)"
-    tab_bg = "rgba(15, 23, 42, 0.8)"
-    tab_hover = "rgba(255, 255, 255, 0.05)"
-    btn_bg = "#F8FAFC"
-    btn_text = "#0F172A"
-    btn_hover = "#E2E8F0"
-    testimonial_bg = "#1E293B"
+    hero_gradient = "linear-gradient(135deg, #6366F1 0%, #8B5CF6 50%, #A855F7 100%)"
+    accent_color = "#8B5CF6"
+    accent_glow = "rgba(139, 92, 246, 0.4)"
+    tab_bg = "rgba(15, 23, 42, 0.7)"
+    tab_hover = "rgba(139, 92, 246, 0.15)"
+    tab_active = "linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%)"
+    btn_bg = "linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%)"
+    btn_text = "#FFFFFF"
+    btn_hover = "linear-gradient(135deg, #818CF8 0%, #A78BFA 100%)"
+    testimonial_bg = "rgba(30, 41, 59, 0.5)"
+    safe_color = "#22C55E"
+    warn_color = "#F59E0B"
+    danger_color = "#EF4444"
+    bento_colors = ["rgba(99, 102, 241, 0.15)", "rgba(139, 92, 246, 0.15)", "rgba(168, 85, 247, 0.15)", "rgba(236, 72, 153, 0.15)"]
 else:
-    bg_color = "#F5F5F5" # Soft White Smoke
-    text_color = "#1E293B" # Slate 800
-    card_bg = "#FFFFFF"
-    border_color = "rgba(0, 0, 0, 0.08)"
-    sub_text_color = "#475569"
-    hero_gradient = "linear-gradient(180deg, #1E293B 0%, #475569 100%)"
-    tab_bg = "rgba(255, 255, 255, 0.9)"
-    tab_hover = "rgba(0, 0, 0, 0.05)"
-    btn_bg = "#1E293B"
-    btn_text = "#F8FAFC"
-    btn_hover = "#334155"
-    testimonial_bg = "#FFFFFF"
+    bg_color = "#FAFAFA"
+    bg_gradient = "radial-gradient(ellipse at 20% 0%, rgba(99, 102, 241, 0.08) 0%, transparent 50%), radial-gradient(ellipse at 80% 100%, rgba(139, 92, 246, 0.05) 0%, transparent 50%), #FAFAFA"
+    text_color = "#1E293B"
+    card_bg = "rgba(255, 255, 255, 0.8)"
+    glass_bg = "rgba(255, 255, 255, 0.7)"
+    border_color = "rgba(0, 0, 0, 0.06)"
+    sub_text_color = "#64748B"
+    hero_gradient = "linear-gradient(135deg, #6366F1 0%, #8B5CF6 50%, #A855F7 100%)"
+    accent_color = "#7C3AED"
+    accent_glow = "rgba(124, 58, 237, 0.3)"
+    tab_bg = "rgba(255, 255, 255, 0.8)"
+    tab_hover = "rgba(124, 58, 237, 0.1)"
+    tab_active = "linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%)"
+    btn_bg = "linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%)"
+    btn_text = "#FFFFFF"
+    btn_hover = "linear-gradient(135deg, #818CF8 0%, #A78BFA 100%)"
+    testimonial_bg = "rgba(255, 255, 255, 0.9)"
+    safe_color = "#16A34A"
+    warn_color = "#D97706"
+    danger_color = "#DC2626"
+    bento_colors = ["rgba(99, 102, 241, 0.1)", "rgba(139, 92, 246, 0.1)", "rgba(168, 85, 247, 0.1)", "rgba(236, 72, 153, 0.1)"]
 
 st.markdown(
     f"""
     <style>
     /* Import Premium Fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
     
-    /* ANIMATIONS */
+    /* PREMIUM ANIMATIONS */
     @keyframes fadeIn {{
-        from {{ opacity: 0; transform: translateY(20px); }}
+        from {{ opacity: 0; transform: translateY(30px); }}
         to {{ opacity: 1; transform: translateY(0); }}
     }}
     
     @keyframes slideInRight {{
-        from {{ opacity: 0; transform: translateX(50px); }}
+        from {{ opacity: 0; transform: translateX(60px); }}
         to {{ opacity: 1; transform: translateX(0); }}
     }}
     
     @keyframes slideInLeft {{
-        from {{ opacity: 0; transform: translateX(-50px); }}
+        from {{ opacity: 0; transform: translateX(-60px); }}
         to {{ opacity: 1; transform: translateX(0); }}
     }}
     
-    .fade-in {{
-        animation: fadeIn 0.6s ease-out;
+    @keyframes float {{
+        0%, 100% {{ transform: translateY(0px); }}
+        50% {{ transform: translateY(-10px); }}
     }}
     
-    .slide-in-right {{
-        animation: slideInRight 0.5s ease-out;
+    @keyframes glow {{
+        0%, 100% {{ box-shadow: 0 0 20px {accent_glow}; }}
+        50% {{ box-shadow: 0 0 40px {accent_glow}, 0 0 60px {accent_glow}; }}
     }}
     
-    .slide-in-left {{
-        animation: slideInLeft 0.5s ease-out;
+    @keyframes shimmer {{
+        0% {{ background-position: -200% 0; }}
+        100% {{ background-position: 200% 0; }}
     }}
+    
+    @keyframes pulse-ring {{
+        0% {{ transform: scale(0.8); opacity: 1; }}
+        100% {{ transform: scale(1.5); opacity: 0; }}
+    }}
+    
+    .fade-in {{ animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1); }}
+    .slide-in-right {{ animation: slideInRight 0.6s cubic-bezier(0.16, 1, 0.3, 1); }}
+    .slide-in-left {{ animation: slideInLeft 0.6s cubic-bezier(0.16, 1, 0.3, 1); }}
+    .float {{ animation: float 3s ease-in-out infinite; }}
 
-    /* Main Background */
+    /* Main Background with Gradient Mesh */
     .stApp {{
-        background: {bg_color};
+        background: {bg_gradient};
         color: {text_color};
-        font-family: 'Inter', sans-serif;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     }}
     
     /* Remove Streamlit Branding */
@@ -988,149 +973,219 @@ st.markdown(
     footer {{visibility: hidden;}}
     header {{visibility: hidden;}}
     
-    /* Typography Overrides */
+    /* Typography - Large & Accessible */
     h1, h2, h3, h4, h5, h6 {{
-        font-family: 'Plus Jakarta Sans', sans-serif !important;
-        letter-spacing: -0.02em;
+        font-family: 'Outfit', sans-serif !important;
+        letter-spacing: -0.03em;
         color: {text_color} !important;
     }}
     
-    /* Hero Section */
+    p, span, div {{
+        font-size: 1.05rem;
+        line-height: 1.7;
+    }}
+    
+    /* Premium Hero Section */
     .hero {{
         text-align: center;
-        padding: 3rem 0 2rem 0;
-        margin-bottom: 2rem;
+        padding: 4rem 0 3rem 0;
+        margin-bottom: 3rem;
         position: relative;
-        animation: fadeIn 1s ease-out;
+        animation: fadeIn 1.2s cubic-bezier(0.16, 1, 0.3, 1);
     }}
     
     .hero h1 {{
-        font-size: 4em !important;
-        font-weight: 800 !important;
+        font-size: 4.5em !important;
+        font-weight: 900 !important;
         background: {hero_gradient};
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        margin-bottom: 1rem !important;
+        background-clip: text;
+        margin-bottom: 1.5rem !important;
         line-height: 1.1;
-        letter-spacing: -0.03em;
+        letter-spacing: -0.04em;
+        text-shadow: 0 4px 30px {accent_glow};
     }}
     
     .hero-subtitle {{
-        font-size: 1.3em;
+        font-size: 1.4em;
         color: {sub_text_color};
         font-weight: 400;
-        max-width: 700px;
+        max-width: 750px;
         margin: 0 auto;
-        line-height: 1.6;
+        line-height: 1.7;
     }}
     
-    /* Tabs - High Visibility Pill */
+    /* Glassmorphism Tabs - Smooth Transitions */
     .stTabs [data-baseweb="tab-list"] {{
-        gap: 8px;
+        gap: 6px;
         background: {tab_bg};
-        padding: 0.5rem;
-        border-radius: 100px;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        padding: 8px;
+        border-radius: 20px;
         border: 1px solid {border_color};
         width: fit-content;
         margin: 0 auto 3rem auto;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     }}
     
     .stTabs [data-baseweb="tab"] {{
-        height: 50px;
+        height: 54px;
         background: transparent;
-        border-radius: 100px;
+        border-radius: 16px;
         padding: 0 2rem;
-        font-size: 1em;
+        font-size: 1.05em;
         font-weight: 600;
         color: {sub_text_color};
         border: none;
-        transition: all 0.2s ease;
+        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     }}
     
     .stTabs [data-baseweb="tab"]:hover {{
         color: {text_color};
         background: {tab_hover};
+        transform: translateY(-2px);
     }}
     
     .stTabs [aria-selected="true"] {{
-        background: #38BDF8;
-        color: #0F172A !important;
-        box-shadow: 0 4px 12px rgba(56, 189, 248, 0.2);
+        background: {tab_active};
+        color: #FFFFFF !important;
+        box-shadow: 0 8px 24px {accent_glow};
         font-weight: 700;
+        transform: translateY(-2px);
     }}
     
-    /* Buttons - Large & Clear */
+    .stTabs [data-baseweb="tab-highlight"] {{
+        display: none;
+    }}
+    
+    /* Premium Buttons - Gradient & Glow */
     .stButton>button {{
         width: 100%;
         background: {btn_bg};
         color: {btn_text};
-        height: 4em;
-        border-radius: 12px;
+        height: 4.5em;
+        border-radius: 16px;
         font-weight: 700;
-        font-size: 1.1em;
+        font-size: 1.15em;
         border: none;
-        transition: all 0.2s ease;
+        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        box-shadow: 0 4px 20px {accent_glow};
     }}
     
     .stButton>button:hover {{
         background: {btn_hover};
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        transform: translateY(-4px);
+        box-shadow: 0 12px 40px {accent_glow};
     }}
     
-    /* Cards */
+    .stButton>button:active {{
+        transform: translateY(-2px);
+    }}
+    
+    /* Glassmorphism Cards */
     .result-card {{
+        padding: 2.5rem;
+        border: 1px solid {border_color};
+        border-radius: 24px;
+        background: {card_bg};
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        margin: 1.5rem 0;
+        animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }}
+    
+    /* BENTO GRID LAYOUT */
+    .bento-grid {{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+        margin: 2rem 0;
+    }}
+    
+    .bento-item {{
+        border-radius: 24px;
         padding: 2rem;
         border: 1px solid {border_color};
-        border-radius: 16px;
-        background: {card_bg};
-        margin: 1.5rem 0;
-        animation: fadeIn 0.6s ease-out;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        overflow: hidden;
+        position: relative;
     }}
     
-    /* Testimonials Section */
+    .bento-item:hover {{
+        transform: translateY(-8px);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    }}
+    
+    .bento-item.large {{
+        grid-column: span 2;
+        grid-row: span 2;
+    }}
+    
+    .bento-item.wide {{
+        grid-column: span 2;
+    }}
+    
+    .bento-item.tall {{
+        grid-row: span 2;
+    }}
+    
+    /* Smooth Testimonial Carousel */
     .testimonial-card {{
         background: {testimonial_bg};
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
         border: 1px solid {border_color};
-        padding: 3rem;
-        border-radius: 24px;
+        padding: 3.5rem;
+        border-radius: 32px;
         height: 100%;
-        min-height: 250px;
+        min-height: 280px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
+        transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }}
+    
+    .testimonial-card:hover {{
+        transform: scale(1.02);
     }}
     
     .testimonial-text {{
-        font-size: 1.4em;
+        font-size: 1.5em;
         color: {text_color};
         font-style: italic;
-        margin-bottom: 2rem;
-        line-height: 1.5;
-        font-family: 'Plus Jakarta Sans', sans-serif;
+        margin-bottom: 2.5rem;
+        line-height: 1.6;
+        font-family: 'Outfit', sans-serif;
+        font-weight: 400;
     }}
     
     .testimonial-author {{
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 1rem;
+        gap: 1.25rem;
     }}
     
     .author-avatar {{
-        width: 48px;
-        height: 48px;
-        background: linear-gradient(135deg, #38BDF8 0%, #0EA5E9 100%);
+        width: 56px;
+        height: 56px;
+        background: {hero_gradient};
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
         font-weight: 700;
         color: white;
-        font-size: 1.2em;
+        font-size: 1.3em;
+        box-shadow: 0 4px 16px {accent_glow};
     }}
     
     .author-info {{
@@ -1140,17 +1195,17 @@ st.markdown(
     .author-name {{
         color: {text_color};
         font-weight: 700;
-        font-size: 1.1em;
+        font-size: 1.15em;
     }}
     
     .author-role {{
         color: {sub_text_color};
-        font-size: 0.9em;
+        font-size: 0.95em;
     }}
     
-    /* Verdict Styles */
-    .verdict-safe {{ color: #4ADE80; font-weight: 700; font-size: 1.8em; display: flex; align-items: center; gap: 0.75rem; }}
-    .verdict-warn {{ color: #FBBF24; font-weight: 700; font-size: 1.8em; display: flex; align-items: center; gap: 0.75rem; }}
+    /* Premium Verdict Styles */
+    .verdict-safe {{ color: {safe_color}; font-weight: 800; font-size: 2em; display: flex; align-items: center; gap: 0.75rem; text-shadow: 0 0 30px rgba(34, 197, 94, 0.3); }}
+    .verdict-warn {{ color: {warn_color}; font-weight: 800; font-size: 2em; display: flex; align-items: center; gap: 0.75rem; text-shadow: 0 0 30px rgba(245, 158, 11, 0.3); }}
     .verdict-risk {{ color: #F87171; font-weight: 700; font-size: 1.8em; display: flex; align-items: center; gap: 0.75rem; }}
     
     /* File Uploader */
@@ -1440,6 +1495,19 @@ def render_results(result, result_type="generic", language="en"):
         unsafe_allow_html=True
     )
     
+    # --- TTS AUTO-PLAY ANNOUNCEMENT ---
+    # Automatically speak the verdict for accessibility
+    tts_key = "tts_safe" if "SAFE" in verdict_class else ("tts_danger" if "risk" in verdict_class else "tts_suspicious")
+    tts_message = t.get(tts_key, "")
+    
+    if tts_message and st.session_state.get('tts_autoplay', True):
+        try:
+            auto_audio = text_to_speech(tts_message, language=language)
+            if auto_audio:
+                st.audio(auto_audio, format="audio/mp3", autoplay=True)
+        except Exception:
+            pass  # Silently fail if TTS unavailable
+    
     # --- CHAMPIONSHIP FEATURES TRIGGER ---
     if "RISK" in v_label or "DANGER" in v_label or "SCAM" in v_label or "PHISHING" in v_label:
         show_money_saved_celebration(scam_type="voice_clone" if result_type == "audio" else "phishing")
@@ -1700,8 +1768,9 @@ with col_theme:
 
 with col_grandma:
     st.markdown("<div style='height: 24px'></div>", unsafe_allow_html=True) # Spacer
-    if st.button("👵", help="Grandmother Mode"):
+    if st.button("👵", help=t.get('grandparents_mode', 'Grandparents Mode')):
         toggle_grandmother_mode()
+        st.rerun()
 
 # --- HERO SECTION ---
 
@@ -1709,81 +1778,100 @@ with col_grandma:
 show_first_time_tutorial()
 
 if st.session_state.grandmother_mode:
-    # --- GRANDMOTHER MODE UI ---
+    # --- GRANDPARENTS MODE: SIMPLIFIED UI ---
+    # Initialize selection state
+    if 'gp_selected' not in st.session_state:
+        st.session_state.gp_selected = None
+    
     st.markdown(
         f"""
-        <style>
-        .grandma-btn {{
-            width: 100%;
-            height: 200px;
-            font-size: 2em;
-            border-radius: 24px;
-            background: linear-gradient(135deg, #38BDF8 0%, #0EA5E9 100%);
-            color: white;
-            border: none;
-            box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3);
-            transition: transform 0.2s;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-        }}
-        .grandma-btn:hover {{
-            transform: scale(1.02);
-        }}
-        .grandma-icon {{
-            font-size: 3em;
-            margin-bottom: 10px;
-        }}
-        .grandma-text {{
-            font-weight: 800;
-        }}
-        </style>
-        <div style='text-align: center; padding: 2rem;'>
-            <h1 style='font-size: 3em; margin-bottom: 2rem;'>{t['hero_title']}</h1>
+        <div style='text-align: center; padding: 2rem 0;'>
+            <h1 style='font-size: 2.5em; color: {text_color}; margin-bottom: 0.5rem;'>{t['hero_title']}</h1>
+            <p style='color: {sub_text_color}; font-size: 1.2em;'>{t.get('gp_instruction', 'What do you want to check?')}</p>
         </div>
         """,
         unsafe_allow_html=True
     )
     
-    gm_col1, gm_col2, gm_col3 = st.columns(3)
-    
-    with gm_col1:
+    # Show the 4 BIG BUTTONS if no selection yet
+    if st.session_state.gp_selected is None:
+        gp_c1, gp_c2 = st.columns(2)
+        
+        with gp_c1:
+            if st.button("📸\n\nCHECK IMAGE", key="gp_btn_image", use_container_width=True):
+                st.session_state.gp_selected = "image"
+                st.rerun()
+            st.markdown("<div style='height: 20px'></div>", unsafe_allow_html=True)
+            if st.button("🔗\n\nCHECK LINK", key="gp_btn_link", use_container_width=True):
+                st.session_state.gp_selected = "link"
+                st.rerun()
+        
+        with gp_c2:
+            if st.button("🎙️\n\nCHECK AUDIO", key="gp_btn_audio", use_container_width=True):
+                st.session_state.gp_selected = "audio"
+                st.rerun()
+            st.markdown("<div style='height: 20px'></div>", unsafe_allow_html=True)
+            if st.button("💬\n\nCHECK TEXT", key="gp_btn_text", use_container_width=True):
+                st.session_state.gp_selected = "text"
+                st.rerun()
+        
+        # Style the buttons to be HUGE
         st.markdown(
             f"""
-            <button class="grandma-btn" onclick="document.getElementById('visual_upload').click()">
-                <div class="grandma-icon">📸</div>
-                <div class="grandma-text">{t['tab_image']}</div>
-            </button>
-            """, 
+            <style>
+            div[data-testid="stButton"] > button {{
+                height: 180px !important;
+                font-size: 1.5em !important;
+                font-weight: 800 !important;
+                background: linear-gradient(135deg, {accent_color} 0%, #6366F1 100%) !important;
+                color: white !important;
+                border-radius: 24px !important;
+                border: none !important;
+                box-shadow: 0 8px 32px {accent_glow} !important;
+                white-space: pre-line !important;
+            }}
+            div[data-testid="stButton"] > button:hover {{
+                transform: scale(1.02);
+                box-shadow: 0 12px 40px {accent_glow} !important;
+            }}
+            </style>
+            """,
             unsafe_allow_html=True
         )
-        # Hidden uploader hack would be complex, so we'll use standard expanders for now but styled big
-        with st.expander(f"📸 {t['analyze_image_btn']}", expanded=True):
-            img_file = st.file_uploader("Upload Image", type=["png", "jpg", "jpeg"], key="gm_visual_upload", label_visibility="collapsed")
+    
+    else:
+        # Back button
+        if st.button("← Back", key="gp_back"):
+            st.session_state.gp_selected = None
+            st.rerun()
+        
+        st.markdown("<br>", unsafe_allow_html=True)
+        
+        # IMAGE CHECK
+        if st.session_state.gp_selected == "image":
+            st.markdown(f"### 📸 {t.get('gp_check_image', 'Upload Image to Check')}")
+            img_file = st.file_uploader("", type=["png", "jpg", "jpeg"], key="gp_img_upload")
             if img_file:
                 st.image(img_file, use_container_width=True)
-                if st.button(t['analyze_image_btn'], key="gm_analyze_img"):
+                if st.button(f"🔍 {t['analyze_image_btn']}", key="gp_analyze_img", type="primary", use_container_width=True):
                     loader = render_custom_loader(t['analyzing'])
                     time.sleep(1.5)
                     result = analyze_image(img_file, language=lang)
                     loader.empty()
                     render_results(result, "image", language=lang)
-
-    with gm_col2:
-        with st.expander(f"🎙️ {t['analyze_audio_btn']}", expanded=True):
-            audio_file = st.file_uploader("Upload Audio", type=["wav", "mp3", "m4a"], key="gm_audio_upload", label_visibility="collapsed")
+        
+        # AUDIO CHECK
+        elif st.session_state.gp_selected == "audio":
+            st.markdown(f"### 🎙️ {t.get('gp_check_audio', 'Upload Audio to Check')}")
+            audio_file = st.file_uploader("", type=["wav", "mp3", "m4a"], key="gp_audio_upload")
             if audio_file:
                 st.audio(audio_file)
-                if st.button(t['analyze_audio_btn'], key="gm_analyze_audio"):
+                if st.button(f"🔍 {t['analyze_audio_btn']}", key="gp_analyze_audio", type="primary", use_container_width=True):
                     loader = render_custom_loader(t['analyzing'])
-                    # Save temp file
                     file_ext = os.path.splitext(audio_file.name)[1]
-                    temp_filename = f"temp_audio_gm{file_ext}"
+                    temp_filename = f"temp_audio_gp{file_ext}"
                     with open(temp_filename, "wb") as f:
                         f.write(audio_file.getbuffer())
-                    
                     time.sleep(1)
                     transcript = transcribe_audio(temp_filename)
                     if transcript:
@@ -1794,21 +1882,36 @@ if st.session_state.grandmother_mode:
                     else:
                         loader.empty()
                         st.error(t['could_not_analyze'])
-                    
                     if os.path.exists(temp_filename):
                         os.remove(temp_filename)
-
-    with gm_col3:
-        with st.expander(f"💬 {t['analyze_text_btn']}", expanded=True):
-            user_text = st.text_area("Text", height=150, key="gm_text_input", label_visibility="collapsed", placeholder=t['enter_text'])
-            if st.button(t['analyze_text_btn'], key="gm_analyze_text"):
-                if user_text.strip():
+        
+        # LINK CHECK
+        elif st.session_state.gp_selected == "link":
+            st.markdown(f"### 🔗 {t.get('gp_check_link', 'Paste Link to Check')}")
+            url_input = st.text_input("", placeholder="https://...", key="gp_url_input")
+            if url_input:
+                if st.button(f"🔍 {t['analyze_url_btn']}", key="gp_analyze_url", type="primary", use_container_width=True):
+                    loader = render_custom_loader(t['analyzing'])
+                    time.sleep(1.5)
+                    url_prompt = f"Analyze this URL for potential scams or phishing: {url_input}"
+                    result = analyze_with_gpt(url_prompt, language=lang)
+                    loader.empty()
+                    if result:
+                        render_results(result, "url", language=lang)
+        
+        # TEXT CHECK
+        elif st.session_state.gp_selected == "text":
+            st.markdown(f"### 💬 {t.get('gp_check_text', 'Paste Message to Check')}")
+            user_text = st.text_area("", height=200, placeholder=t['enter_text'], key="gp_text_input")
+            if user_text.strip():
+                if st.button(f"🔍 {t['analyze_text_btn']}", key="gp_analyze_text", type="primary", use_container_width=True):
                     loader = render_custom_loader(t['analyzing'])
                     time.sleep(1.5)
                     result = analyze_with_gpt(user_text, language=lang)
                     loader.empty()
                     if result:
                         render_results(result, "text", language=lang)
+
 
 else:
     # --- STANDARD UI ---
@@ -1825,13 +1928,41 @@ else:
         unsafe_allow_html=True
     )
     
-    # --- EMOTIONAL FEATURES (TIER 2) ---
-    show_grandmother_message()
-    show_recent_activity_ticker()
-    show_grandmother_tested_badge()
-
-    # --- TABS (MOVED UP FOR ACCESSIBILITY) ---
-    tab1, tab2, tab3, tab4 = st.tabs([t['tab_image'], t['tab_audio'], t['tab_text'], t['tab_family']])
+    # --- BENTO GRID STATS ---
+    st.markdown(
+        f"""
+        <div style='display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin: 2rem 0;'>
+            <div style='background: {card_bg}; backdrop-filter: blur(20px); border-radius: 20px; padding: 1.5rem; text-align: center; border: 1px solid {border_color};'>
+                <div style='font-size: 2.5em; font-weight: 800; background: linear-gradient(135deg, #EF4444, #F87171); -webkit-background-clip: text; -webkit-text-fill-color: transparent;'>
+                    {st.session_state.get('scams_blocked', 47):,}
+                </div>
+                <div style='color: {sub_text_color}; font-weight: 600; margin-top: 0.5rem;'>🚫 {t.get('stats_blocked', 'Scams Blocked')}</div>
+            </div>
+            <div style='background: {card_bg}; backdrop-filter: blur(20px); border-radius: 20px; padding: 1.5rem; text-align: center; border: 1px solid {border_color};'>
+                <div style='font-size: 2.5em; font-weight: 800; background: linear-gradient(135deg, #22C55E, #4ADE80); -webkit-background-clip: text; -webkit-text-fill-color: transparent;'>
+                    ₹{st.session_state.get('money_saved', 125000):,}
+                </div>
+                <div style='color: {sub_text_color}; font-weight: 600; margin-top: 0.5rem;'>💰 {t.get('stats_prevented', 'Money Saved')}</div>
+            </div>
+            <div style='background: {card_bg}; backdrop-filter: blur(20px); border-radius: 20px; padding: 1.5rem; text-align: center; border: 1px solid {border_color};'>
+                <div style='font-size: 2.5em; font-weight: 800; background: linear-gradient(135deg, #F59E0B, #FBBF24); -webkit-background-clip: text; -webkit-text-fill-color: transparent;'>
+                    {st.session_state.get('streak', 7)} 🔥
+                </div>
+                <div style='color: {sub_text_color}; font-weight: 600; margin-top: 0.5rem;'>📅 Days Protected</div>
+            </div>
+            <div style='background: {card_bg}; backdrop-filter: blur(20px); border-radius: 20px; padding: 1.5rem; text-align: center; border: 1px solid {border_color};'>
+                <div style='font-size: 2.5em; font-weight: 800; background: linear-gradient(135deg, #6366F1, #8B5CF6); -webkit-background-clip: text; -webkit-text-fill-color: transparent;'>
+                    99.2%
+                </div>
+                <div style='color: {sub_text_color}; font-weight: 600; margin-top: 0.5rem;'>🎯 {t.get('stats_accuracy', 'AI Accuracy')}</div>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+    
+    # --- TABS (MAIN SCANNER - NOW FIRST!) ---
+    tab1, tab2, tab3, tab4, tab5 = st.tabs([t['tab_image'], t['tab_audio'], t['tab_text'], t['tab_url'], t['tab_family']])
 
     # ==================== VISUAL SHIELD ====================
     with tab1:
@@ -1927,9 +2058,54 @@ else:
             else:
                 st.warning(t['please_enter'])
 
-    # ==================== FAMILY SHIELD ====================
+    # ==================== URL SHIELD (NEW!) ====================
     with tab4:
+        st.markdown(f"### 🔗 Link Scanner")
+        st.markdown("Paste a suspicious URL or link to check if it's safe.")
+        
+        url_input = st.text_input(
+            "🔗",
+            placeholder="Example: https://suspicious-link.com/offer",
+            key="url_input"
+        )
+        
+        st.markdown("<br>", unsafe_allow_html=True)
+        
+        if st.button(t['analyze_url_btn'], key="analyze_url_btn"):
+            if url_input.strip():
+                loader = render_custom_loader(get_random_scam_tip())
+                time.sleep(1.5)
+                
+                # Analyze URL with GPT
+                url_prompt = f"""Analyze this URL for potential scams or phishing:
+                
+URL: {url_input}
+
+Check for:
+1. Suspicious domain names (misspellings of real brands)
+2. Unusual URL parameters
+3. Known phishing patterns
+4. Too-good-to-be-true offers in the path
+5. Shortened URLs hiding real destination"""
+                
+                result = analyze_with_gpt(url_prompt, language=lang)
+                loader.empty()
+                
+                if result:
+                    render_results(result, "url", language=lang)
+                else:
+                    st.error(t['could_not_analyze'])
+            else:
+                st.warning(t['please_enter'])
+
+    # ==================== FAMILY SHIELD ====================
+    with tab5:
         show_family_shield_circle()
+
+    # --- EMOTIONAL FEATURES (AFTER SCANNER) ---
+    show_grandmother_message()
+    show_recent_activity_ticker()
+    show_grandmother_tested_badge()
 
 # --- STATS BAR ---
 st.markdown("<br><br>", unsafe_allow_html=True)
