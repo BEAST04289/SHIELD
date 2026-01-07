@@ -418,47 +418,65 @@ def show_report_to_authorities():
 
     with col2:
         st.markdown("### 📞 Emergency Helplines")
+        
+        # Main helpline number
         st.markdown(
             """
             <div style='padding: 1.5rem; background: rgba(0, 184, 212, 0.1); 
                         border-radius: 12px; border: 2px solid rgba(0, 184, 212, 0.3);'>
-                <div style='margin-bottom: 1rem;'>
-                    <div style='font-size: 1.8em; font-weight: 800; color: #00B8D4;'>1930</div>
-                    <div style='color: #94A3B8; font-size: 0.9em;'>National Cyber Crime Helpline</div>
-                    <div style='color: #64748B; font-size: 0.85em; margin-top: 0.3rem;'>
-                        24/7 • Toll Free • All India
-                    </div>
+                <div style='font-size: 1.8em; font-weight: 800; color: #00B8D4;'>1930</div>
+                <div style='color: #94A3B8; font-size: 0.9em;'>National Cyber Crime Helpline</div>
+                <div style='color: #64748B; font-size: 0.85em; margin-top: 0.3rem;'>
+                    24/7 • Toll Free • All India
                 </div>
-                
-                <div style='margin: 1.5rem 0; padding: 1rem; background: rgba(255, 255, 255, 0.05); 
-                            border-radius: 8px;'>
-                    <div style='font-weight: 700; color: #00B8D4; margin-bottom: 0.5rem;'>
-                        📧 Email Report
-                    </div>
-                    <div style='color: #94A3B8; font-size: 0.9em;'>
-                        complaints@cybercrime.gov.in
-                    </div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+        
+        # Email section
+        st.markdown(
+            """
+            <div style='margin: 1rem 0; padding: 1rem; background: rgba(255, 255, 255, 0.05); 
+                        border-radius: 8px;'>
+                <div style='font-weight: 700; color: #00B8D4; margin-bottom: 0.5rem;'>
+                    📧 Email Report
                 </div>
-                
-                <div style='padding: 1rem; background: rgba(255, 255, 255, 0.05); border-radius: 8px;'>
-                    <div style='font-weight: 700; color: #00B8D4; margin-bottom: 0.5rem;'>
-                        🌐 Online Portal
-                    </div>
-                    <div style='color: #94A3B8; font-size: 0.9em;'>
-                        <a href='https://cybercrime.gov.in' target='_blank'
-                           style='color: #00E5FF;'>cybercrime.gov.in</a>
-                    </div>
+                <div style='color: #94A3B8; font-size: 0.9em;'>
+                    complaints@cybercrime.gov.in
                 </div>
-                
-                <div style='margin-top: 1.5rem; padding: 1rem; background: rgba(255, 193, 7, 0.1); 
-                            border-radius: 8px; border-left: 3px solid #FFC107;'>
-                    <div style='color: #FFA726; font-weight: 700; margin-bottom: 0.5rem;'>
-                        ⚠️ In Emergency
-                    </div>
-                    <div style='color: #E1E8ED; font-size: 0.9em;'>
-                        If you've already sent money or shared sensitive info, call <strong>immediately</strong>.
-                        Time is critical in fraud cases.
-                    </div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+        
+        # Online Portal section
+        st.markdown(
+            """
+            <div style='padding: 1rem; background: rgba(255, 255, 255, 0.05); border-radius: 8px;'>
+                <div style='font-weight: 700; color: #00B8D4; margin-bottom: 0.5rem;'>
+                    🌐 Online Portal
+                </div>
+                <div style='color: #94A3B8; font-size: 0.9em;'>
+                    <a href='https://cybercrime.gov.in' target='_blank'
+                       style='color: #00E5FF;'>cybercrime.gov.in</a>
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+        
+        # Emergency warning
+        st.markdown(
+            """
+            <div style='margin-top: 1rem; padding: 1rem; background: rgba(255, 193, 7, 0.1); 
+                        border-radius: 8px; border-left: 3px solid #FFC107;'>
+                <div style='color: #FFA726; font-weight: 700; margin-bottom: 0.5rem;'>
+                    ⚠️ In Emergency
+                </div>
+                <div style='color: #E1E8ED; font-size: 0.9em;'>
+                    If you've already sent money or shared sensitive info, call <strong>immediately</strong>.
+                    Time is critical in fraud cases.
                 </div>
             </div>
             """,
@@ -1240,8 +1258,8 @@ st.markdown(
         margin-top: 0.5rem;
     }}
     
-    /* Carousel Buttons */
-    div[data-testid="stHorizontalBlock"] button {{
+    /* Carousel Navigation Buttons - Only for arrow buttons */
+    .carousel-nav button {{
         background: {btn_bg};
         color: {btn_text};
         border-radius: 50%;
@@ -1251,7 +1269,7 @@ st.markdown(
         line-height: 1;
         font-size: 1.5em;
     }}
-    div[data-testid="stHorizontalBlock"] button:hover {{
+    .carousel-nav button:hover {{
         background: {btn_hover};
         transform: scale(1.1);
     }}
