@@ -9,15 +9,27 @@ from openai import AzureOpenAI
 
 load_dotenv()
 
+# Helper function to get secrets from either env vars or streamlit secrets
+def get_secret(key, default=None):
+    """Get secret from env vars first, then streamlit secrets"""
+    value = os.getenv(key)
+    if value:
+        return value
+    try:
+        import streamlit as st
+        return st.secrets.get(key, default)
+    except:
+        return default
+
 # --- Configuration ---
-CV_ENDPOINT = os.getenv("AZURE_CV_ENDPOINT")
-CV_KEY = os.getenv("AZURE_CV_KEY")
+CV_ENDPOINT = get_secret("AZURE_CV_ENDPOINT")
+CV_KEY = get_secret("AZURE_CV_KEY")
 
 # AI Brain Configuration (GitHub Models or Azure OpenAI)
-GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
-AOAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT")
-AOAI_KEY = os.getenv("AZURE_OPENAI_KEY")
-AOAI_DEPLOYMENT = os.getenv("AZURE_OPENAI_DEPLOYMENT_NAME", "gpt-4o")
+GITHUB_TOKEN = get_secret("GITHUB_TOKEN")
+AOAI_ENDPOINT = get_secret("AZURE_OPENAI_ENDPOINT")
+AOAI_KEY = get_secret("AZURE_OPENAI_KEY")
+AOAI_DEPLOYMENT = get_secret("AZURE_OPENAI_DEPLOYMENT_NAME", "gpt-4o")
 
 def get_ocr_text(image_stream):
     """

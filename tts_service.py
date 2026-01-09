@@ -5,9 +5,21 @@ import azure.cognitiveservices.speech as speechsdk
 
 load_dotenv()
 
+# Helper function to get secrets from either env vars or streamlit secrets
+def get_secret(key, default=None):
+    """Get secret from env vars first, then streamlit secrets"""
+    value = os.getenv(key)
+    if value:
+        return value
+    try:
+        import streamlit as st
+        return st.secrets.get(key, default)
+    except:
+        return default
+
 # --- Configuration ---
-SPEECH_KEY = os.getenv("AZURE_SPEECH_KEY")
-SPEECH_REGION = os.getenv("AZURE_SPEECH_REGION")
+SPEECH_KEY = get_secret("AZURE_SPEECH_KEY")
+SPEECH_REGION = get_secret("AZURE_SPEECH_REGION")
 
 def text_to_speech(text, language='en', output_file="output_tts.mp3"):
     """
