@@ -9,10 +9,13 @@
 [![Azure AI](https://img.shields.io/badge/Azure%20AI-Services-0078D4.svg)](https://azure.microsoft.com/en-us/solutions/ai/)
 [![Imagine Cup](https://img.shields.io/badge/Imagine%20Cup-2026-purple.svg)](https://imaginecup.microsoft.com/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Try%20Now-brightgreen.svg)](https://shield-beast04289.streamlit.app)
 
 **An autonomous AI guardian that empowers grandparents to defeat digital fraud. Features "Grandparents Mode" for extreme accessibility and real-time family alerts.**
 
-[Live Demo](#-quick-start) • [Architecture](#-architecture) • [Performance](#-performance-benchmarks) • [Tech Stack](#-tech-stack-decisions)
+### 🌐 [Try the Live Demo →](https://shield-beast04289.streamlit.app)
+
+[Live Demo](https://shield-beast04289.streamlit.app) • [Architecture](#-architecture) • [Performance](#-performance-benchmarks) • [Tech Stack](#-tech-stack-decisions)
 
 </div>
 
@@ -126,8 +129,8 @@ Total Time: <3 seconds (vs. hours of panic and confusion)
 
 ```bash
 # Clone repository
-git clone https://github.com/BEAST04289/ImagineCup.git
-cd ImagineCup
+git clone https://github.com/BEAST04289/SHIELD.git
+cd SHIELD
 
 # Create virtual environment
 python -m venv venv
